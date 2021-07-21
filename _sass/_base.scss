@@ -116,7 +116,7 @@ strong {
   }
   &__content {
     font-weight: 300;
-    font-size: $body;
+    @include font-size($body);
     width: 100%;
     max-width: 650px;
     @include tablet {
@@ -184,7 +184,7 @@ strong {
 
 .small {
   font-family: $monospace;
-  font-size: $caption;
+  @include font-size($caption);
   display: inline-block;
   margin-top: 15px;
   &:after {

@@ -14,15 +14,12 @@
   }
 
   &__hello, &__tagline {
-    font-size: $h3;
+    @include font-size($h2);
     
     .emoji {
-      width: 40px;
-      height: 40px;
-      @include desktop {
-        width: 35px;
-        height: 35px;
-      }
+      width: 35px;
+      height: 35px;
+
       @include tablet {
         width: 30px;
         height: 30px;
@@ -71,7 +68,7 @@
   }
   &__tagline {
     font-weight: 300;
-    max-width: 700px;
+    max-width: 800px;
     .name {
       font-weight: 700;
     }
@@ -80,8 +77,8 @@
     }
   }
   &__contact {
-    font-size: $h6;
     font-weight: 400;
+    @include font-size($h5);
 
     .emoji {
       &.pointer {

@@ -49,22 +49,28 @@ $font-stack: Helvetica, Roboto, system, system-ui, -apple-system, BlinkMacSystem
 $sans: 'Urbanist', $font-stack;
 $monospace: 'Ubuntu Mono', monospace;
 
+@mixin font-size($val) {
+  // font-size: #{$val}rem;
+  // @media screen and (max-width: #{$desktop-width}) {
+  //   font-size: calc(calc(#{$val}rem * 0.5) + 1.75vw);
+  // }
 
-$h3: 2.5rem;
-$h6: 1.25rem;
-$body: 1rem;
-$caption: 0.85rem;
+  font-size: #{$val}vw;
 
-@media screen and (max-width: #{$desktop-width}) {
-  $h3: 2.25rem;
+  @media screen and (max-width: #{$mobile-width}) {
+    font-size: calc(#{$val}vw + #{$val*2.4}px);
+  }
+
+  @media screen and (min-width: #{$desktop-width}) {
+    font-size: calc(#{$val * 0.5}rem);
+  }
 }
 
-@media screen and (max-width: #{$tablet-width}) {
-  $h3: 2rem;
-  $h6: 1.15rem;
-}
-
-@media screen and (max-width: #{$mobile-width}) {
-  $h3: 1.625rem;
-  $h6: 1.1rem;
-}
+$h1: 5.0;
+$h2: 4.3;
+$h3: 3.6;
+$h4: 3.0;
+$h5: 2.5;
+$h6: 2.1;
+$body: 1.5;
+$caption: 1.0;
