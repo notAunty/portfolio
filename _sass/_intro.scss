@@ -15,8 +15,10 @@
 
   &__hello, &__tagline {
     @include font-size($h2);
-    
+
     .emoji {
+      margin-bottom: 8px;
+      vertical-align: middle;
       width: 35px;
       height: 35px;
 
@@ -26,12 +28,13 @@
       }
     }
   }
+
   &__hello {
     font-weight: 300;
+
     .wave-hand {
-      background-image: url('../img/emojis/wave.png');
       margin-left: 10px;
-      cursor: pointer;
+      background-image: url('../img/emojis/wave.png');
 
       &.animated {
         animation-duration: 1s;
