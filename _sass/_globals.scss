@@ -1,0 +1,52 @@
+// Colors
+$night: #171c28;
+$black: #36363c;
+$dark-grey: #444452;
+$grey: #777777;
+$blue: #007bff;
+$slate: #afafbf;
+$off-white: #e7e7e7;
+$white: #ffffff;
+$green: #bae67e;
+$purple: #7d0ce8;
+$red: #ff0000;
+$orange: #e8850c;
+$yellow: #ffdc00;
+$accent: #ffcc66;
+
+// Fonts
+
+// Media queries
+$large-desktop-width: 1440px;
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 480px;
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin large-desktop {
+  @media screen and (max-width: #{$large-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
