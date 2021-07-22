@@ -1,0 +1,33 @@
+languages:
+  - item: Dart
+  - item: Python
+  - item: JavaScript
+  - item: HTML
+  - item: CSS/Sass
+  - item: Java
+  - item: SQL
+
+frameworks:
+  - item: Flutter
+  - item: Jekyll
+  - item: Node.js
+  - item: Wordpress
+  - item: PyTorch
+  - item: Tensorflow
+  - item: Scikit-learn
+
+tools:
+  - item: PostgreSQL
+  - item: Git & Github
+  - item: Jupyter Notebook
+  - item: Bash
+  - item: Postman
+  - item: Redshift
+  - item: Firebase
+  - item: Google Cloud
+
+other:
+  - item: Vim
+  - item: Linux
+  - item: Figma
+  - item: Premiere Pro

@@ -27,8 +27,14 @@ description: >- # this means to ignore newlines until "email:"
 email: ksoh@tuta.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  notaunty
-twitter_username: jekyllrb
+social:
+  - title: email
+    url: mailto:ksoh@tuta.io
+  - title: github
+    url: https://github.com/notaunty
+  - title: linkedin
+    url: https://www.linkedin.com
+
 
 # Build settings
 # theme: minima
