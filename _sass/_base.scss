@@ -198,6 +198,7 @@ strong {
 }
 
 #go-top-btn {
+  display: none;
   @include transition;
   background: transparent;
   border: none;
@@ -207,7 +208,6 @@ strong {
   bottom: 25px;
   right: 10px;
   cursor: pointer;
-  display: none;
   @include desktop {
     bottom: 20px;
     right: 7px;
