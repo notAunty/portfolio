@@ -1,0 +1,26 @@
+.skills {
+  .skillz {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    &__category {
+      margin-right: 8px;
+      @include tablet {
+        width: 47%;
+        margin-bottom: 25px;
+      }
+      &__label {
+        font-weight: 700;
+        color: $black;
+        text-transform: uppercase;
+      }
+      &__item {
+        margin: 3px 0;
+        @include font-size($body);
+        // font-size: 0.9rem;
+      }
+    }
+  }
+}

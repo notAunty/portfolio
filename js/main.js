@@ -2,16 +2,17 @@ $('document').ready(main);
 
 function main() {
   // NIGHT MODE
-  // const d = new Date();
-  // const hours = d.getHours();
-  // const nightTime = hours >= 19 || hours <= 7; // between 7pm and 7am
   const body = document.querySelector("body");
   const toggle = document.getElementById("toggle");
   const input = document.getElementById("switch");
 
+  // Auto Night mode at night time
+  // const d = new Date();
+  // const hours = d.getHours();
+  // const nightTime = hours >= 19 || hours <= 7; // between 7pm and 7am
   // if (nightTime) {
-  input.checked = true;
-  body.classList.add("night");
+  // input.checked = true;
+  // body.classList.add("night");
   // }
 
   toggle.addEventListener("click", function () {
@@ -26,15 +27,15 @@ function main() {
   // GO TO TOP BUTTON
   const introHeight = document.querySelector(".intro").offsetHeight;
   const goTopButton = document.getElementById("go-top-btn");
-  const $goTopButton = $("#go-top-btn");
+  // const $goTopButton = $("#go-top-btn");
 
   window.addEventListener(
     "scroll",
     function () {
-      if (window.scrollY > introHeight) {
-        $goTopButton.fadeIn();
+      if (window.scrollY > (introHeight * 0.8)) {
+        goTopButton.style.display = 'block'; // $goTopButton.fadeIn();
       } else {
-        $goTopButton.fadeOut();
+        goTopButton.style.display = 'none'; // $goTopButton.fadeOut();
       }
     },
     false
