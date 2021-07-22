@@ -1,8 +1,11 @@
 .status {
   display: flex;
   align-items: center;
-  font-size: 1.1rem;
   margin-top: 70px;
+
+  line-height: 1.1rem;;
+  @include font-size($h6);
+  // font-size: 1.1rem;
 
   &__light {
     width: 30px;
@@ -18,7 +21,7 @@
       animation: pulsate 2s ease-out;
       animation-iteration-count: infinite;
       opacity: 0;
-      border: 3px solid $green;
+      border: 3px solid $primary;
       border-radius: 30px;
     }
 
@@ -40,7 +43,7 @@
       position: absolute;
       width: 13px;
       height: 13px;
-      background: $green;
+      background: $primary;
       border-radius: 100%;
     }
   }
