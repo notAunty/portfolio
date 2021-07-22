@@ -58,7 +58,7 @@ $monospace: 'Ubuntu Mono', monospace;
   font-size: #{$val}vmax;
 
   @media screen and (max-width: #{$mobile-width}) {
-    font-size: calc(#{$val}vmax + #{$val * 2.4}px);
+    font-size: calc(#{(($val - 1.6) * 1.8 / 3.4) + 2.2}vmax);
   }
 
   @media screen and (min-width: #{$desktop-width}) {
@@ -74,3 +74,4 @@ $h5: 2.5;
 $h6: 2.2;
 $body: 1.9;
 $caption: 1.6;
+
