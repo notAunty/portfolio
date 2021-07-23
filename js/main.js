@@ -33,9 +33,11 @@ function main() {
     "scroll",
     function () {
       if (window.scrollY > (introHeight * 0.8)) {
-        goTopButton.style.display = 'block'; // $goTopButton.fadeIn();
+        // goTopButton.style.display = 'block'; // $goTopButton.fadeIn();
+        goTopButton.style.transform = 'translateY(0px)';
       } else {
-        goTopButton.style.display = 'none'; // $goTopButton.fadeOut();
+        // goTopButton.style.display = 'none'; // $goTopButton.fadeOut();
+        goTopButton.style.transform = 'translateY(64px)';
       }
     },
     false

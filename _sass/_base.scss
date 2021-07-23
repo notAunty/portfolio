@@ -201,8 +201,7 @@ strong {
 }
 
 #go-top-btn {
-  display: none;
-  @include transition;
+  display: block;
   background: $white;
   width: 40px;
   height: 40px;
@@ -210,19 +209,19 @@ strong {
   outline: none;
   cursor: pointer;
   border-radius: 50%;
-  box-shadow: 0 5px 11px -2px rgba(0, 0, 0, 0.1);
   position: fixed;
-  bottom: 25px;
-  right: 10px;
+  bottom: 24px;
+  right: 16px;
+  @include transition;
+  transform:translateY(64px);
+  box-shadow: 0 5px 11px -2px rgba(0, 0, 0, 0.1);
   @include desktop {
-    bottom: 20px;
-    right: 7px;
-    width: 35px;
-    height: 35px;
+    bottom: 16px;
+    right: 12px;
   }
   @include mobile {
-    bottom: 15px;
-    right: 6px;
+    bottom: 12px;
+    right: 8px;
   }
 
   &:hover,
