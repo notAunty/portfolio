@@ -9,8 +9,8 @@ languages:
 
 frameworks:
   - item: Flutter
-  - item: Jekyll
   - item: Node.js
+  - item: React
   - item: Wordpress
   - item: PyTorch
   - item: Tensorflow
@@ -20,6 +20,7 @@ tools:
   - item: PostgreSQL
   - item: Git & Github
   - item: Jupyter Notebook
+  - item: npm
   - item: Bash
   - item: Postman
   - item: Redshift
@@ -30,4 +31,5 @@ other:
   - item: Vim
   - item: Linux
   - item: Figma
+  - item: Jekyll
   - item: Premiere Pro
