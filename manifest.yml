@@ -1,0 +1,23 @@
+---
+permalink: manifest.json
+---
+
+{
+  "lang": "en",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#171c28",
+  "background_color": "#171c28",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "name": "{{site.title}}",
+  "short_name": "{{site.short_title}}",
+  "description": "{{site.description}}",
+  "icons": [
+    {
+      "src": "img/emojis/technologist.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}

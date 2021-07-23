@@ -19,13 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 name: K Soh
+email: ksoh@tuta.io
+short_title: K Soh | SE & DS
 title: K Soh | Software Engineer & Data Scientist
 description: >- # this means to ignore newlines until "email:". Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
   I'm K Soh, a design minded software engineer & data scientist focused on developing user-friendly apps & products.
-email: ksoh@tuta.io
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wksoh.com" # the base hostname & protocol for your site, e.g. http://example.com
 cover: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+logo: "wksoh.com/img/emojis/technologist.png"
+url: "https://wksoh.com" # the base hostname & protocol for your site, e.g. http://example.com
+keywords: "ksoh, web, web development, ai, datascience, javascript, singapore, malaysia, flutter, apps, mobile apps"
 social:
   - title: email
     url: mailto:ksoh@tuta.io
