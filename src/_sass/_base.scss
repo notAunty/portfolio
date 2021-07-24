@@ -45,6 +45,7 @@ body {
     strong,
     .intro,
     .status,
+    .project__name,
     .skills .skillz__category__label,
     .experience .job__time,
     .footer__copyright {
@@ -86,6 +87,10 @@ img {
 strong {
   font-weight: 700;
   color: $black;
+}
+
+.card {
+  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
 }
 
 .emoji {

@@ -1,0 +1,33 @@
+.experience {
+  .jobs {
+    margin-bottom: 100px;
+  }
+  .job {
+    margin-bottom: 25px;
+    .time-place {
+      display: flex;
+      justify-content: space-between;
+      @include mobile {
+        display: block;
+      }
+    }
+    &__company {
+      font-weight: 700;
+      max-width: 70%;
+    }
+    &__time {
+      // font-size: 0.9rem;
+      @include font-size($caption);
+      font-family: $monospace;
+    }
+  }
+  .arrow-link {
+    // font-size: 1.25rem;
+    @include font-size($h6);
+    &:after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
