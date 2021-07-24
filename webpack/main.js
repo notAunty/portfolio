@@ -15,6 +15,7 @@ function main() {
   // body.classList.add("night");
   // }
 
+  // Night mode toggle
   toggle.addEventListener("click", function () {
     const isChecked = input.checked;
     if (isChecked) {
@@ -29,6 +30,7 @@ function main() {
   const goTopButton = document.getElementById("go-top-btn");
   // const $goTopButton = $("#go-top-btn");
 
+  // Show Go-Top-Button when scroll beyond first-page
   window.addEventListener(
     "scroll",
     function () {
@@ -43,15 +45,28 @@ function main() {
     false
   );
 
+  // Click Go-Top-Button to go back up
   goTopButton.addEventListener("click", function () {
     // $("html, body").animate({ scrollTop: 0 }, 500);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // BROKEN IMAGES
+  // HANDLE BROKEN IMAGES
    document.querySelectorAll('img').forEach(function(img){
     img.onerror = function(){this.style.display='none';};
-   })
+   });
+
+  // SCROLL DOWN HINT ARROW
+  const arrows = document.querySelectorAll(".arrow");
+  setTimeout(function() {
+    if (window.scrollY < (introHeight * 0.2)) {
+      arrows.forEach(function(arrow){
+        arrow.style.display = 'block';
+      });
+    } else {
+      console.log('Scroll down arrow hint skipped.');
+    }
+  }, 3000);
 
   // HAND WAVE ANIMATION
   const hand = document.querySelector(".emoji.wave-hand");
