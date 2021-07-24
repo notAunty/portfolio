@@ -1,0 +1,20 @@
+{
+  "name": "ksoh-portfolio",
+  "version": "0.2.0",
+  "description": "K Soh Portfolio",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "authors": [
+    {
+      "name": "K Soh",
+      "email": "ksoh@tuta.io"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2"
+  }
+}

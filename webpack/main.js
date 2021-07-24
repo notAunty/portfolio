@@ -44,7 +44,8 @@ function main() {
   );
 
   goTopButton.addEventListener("click", function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
+    // $("html, body").animate({ scrollTop: 0 }, 500);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   // BROKEN IMAGES
@@ -74,6 +75,7 @@ function main() {
     hand.classList.remove("wave");
   });
 
+  // SCROLL REVEAL
   window.sr = ScrollReveal({
     reset: false,
     duration: 600,

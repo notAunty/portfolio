@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+_site/
+public/
+.sass-cache
+.jekyll-metadata
+node_modules
