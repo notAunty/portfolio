@@ -223,15 +223,17 @@ strong {
   bottom: 24px;
   right: 16px;
   @include transition;
-  transform:translateY(64px);
+  transform:translateY(100px);
   box-shadow: 0 5px 11px -2px rgba(0, 0, 0, 0.1);
   @include desktop {
     bottom: 16px;
     right: 12px;
   }
   @include mobile {
-    bottom: 12px;
-    right: 8px;
+    bottom: 32px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
   }
 
   &:hover,

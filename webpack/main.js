@@ -39,7 +39,7 @@ function main() {
         goTopButton.style.transform = 'translateY(0px)';
       } else {
         // goTopButton.style.display = 'none'; // $goTopButton.fadeOut();
-        goTopButton.style.transform = 'translateY(64px)';
+        goTopButton.style.transform = 'translateY(100px)';
       }
     },
     false
