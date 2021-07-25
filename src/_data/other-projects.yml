@@ -1,11 +1,15 @@
-- name: Dream Corporation
-  url: https://github.com/notAunty/dreamCorporation
-  code: https://github.com/notAunty/dreamCorporation
-  description: My first native Android app. This e-wallet is an experiment of creating beautiful UI with the Android framework. 
+- name: My Portfolio
+  url: https://wksoh.com
+  code: https://wksoh.com
+  description: This portfolio site showcase my previous & latest work in a clean manner.
   used:
-    - thing: Java
-    - thing: Firebase
-    - thing: Android Studio
+    - thing: JavaScript
+    - thing: Webpack
+    - thing: Jekyll
+    - thing: Node.js
+    - thing: Scss
+    - thing: Vim
+
 
 - name: UM Expert Scraper
   url: https://github.com/notAunty/UmExpertScraper
@@ -15,4 +19,13 @@
     - thing: Python
     - thing: Beautiful Soup
     - thing: VS Code
+
+- name: Dream Corporation
+  url: https://github.com/notAunty/dreamCorporation
+  code: https://github.com/notAunty/dreamCorporation
+  description: My first native Android app. This e-wallet is an experiment of creating beautiful UI with the Android framework. 
+  used:
+    - thing: Java
+    - thing: Firebase
+    - thing: Android Studio
 
