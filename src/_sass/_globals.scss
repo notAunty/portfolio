@@ -53,3 +53,9 @@ $mobile-width: 480px;
   }
 }
 
+@mixin ultrawide {
+  @media screen and (max-width: #{$mobile-width}) and (max-aspect-ratio: 7/18) {
+    @content;
+  }
+}
+
