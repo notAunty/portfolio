@@ -1,7 +1,13 @@
 .featured-projects {
-  a:after {
+  a:not([class]):after { // Select <a> tag without any class
     display: none;
   }
+
+  // Select <a> tag with class=""
+  // a[class=""] { /* selects only Section C */
+  //   font-weight: bold;
+  // }
+
   .project {
     // display: flex;
     display: block;

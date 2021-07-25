@@ -1,0 +1,32 @@
+.other-projects {
+  .project {
+    max-width: 600px;
+    margin-bottom: 50px;
+    &__name {
+      margin-bottom: 10px;
+    }
+    p {
+      // font-size: 0.9rem;
+      @include font-size($body);
+      margin-bottom: 15px;
+    }
+    &__used {
+      &__item {
+        display: inline-block;
+        margin: 3px 3px 3px 0;
+        font-family: $monospace;
+        // font-size: 0.75rem;
+        @include font-size($caption);
+        font-weight: 700;
+        padding: 2px 7px;
+        border-radius: 3px;
+        color: $primary;
+        border: 1px solid $primary;
+        background: transparent;
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

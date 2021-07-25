@@ -1,0 +1,18 @@
+- name: Dream Corporation
+  url: https://github.com/notAunty/dreamCorporation
+  code: https://github.com/notAunty/dreamCorporation
+  description: My first native Android app. This e-wallet is an experiment of creating beautiful UI with the Android framework. 
+  used:
+    - thing: Java
+    - thing: Firebase
+    - thing: Android Studio
+
+- name: UM Expert Scraper
+  url: https://github.com/notAunty/UmExpertScraper
+  code: https://github.com/notAunty/UmExpertScraper
+  description: My first ever Python script to scrape the UM Lecturer Directory site in order to export all lecturers in a Faculty as a CSV file. 
+  used:
+    - thing: Python
+    - thing: Beautiful Soup
+    - thing: VS Code
+
