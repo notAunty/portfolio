@@ -4,6 +4,11 @@
   }
   .job {
     margin-bottom: 25px;
+
+    &:last-of-type {
+      margin-bottom: -50px;
+    }
+
     .time-place {
       display: flex;
       justify-content: space-between;

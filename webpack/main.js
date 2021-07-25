@@ -7,13 +7,13 @@ function main() {
   const input = document.getElementById("switch");
 
   // Auto Night mode at night time
-  // const d = new Date();
-  // const hours = d.getHours();
-  // const nightTime = hours >= 19 || hours <= 7; // between 7pm and 7am
-  // if (nightTime) {
-  // input.checked = true;
-  // body.classList.add("night");
-  // }
+  const d = new Date();
+  const hours = d.getHours();
+  const nightTime = hours >= 19 || hours <= 7; // between 7pm and 7am
+  if (nightTime) {
+    input.checked = true;
+    body.classList.add("night");
+  }
 
   // Night mode toggle
   toggle.addEventListener("click", function () {
@@ -57,12 +57,10 @@ function main() {
    });
 
   // SCROLL DOWN HINT ARROW
-  const arrows = document.querySelectorAll(".arrow");
+  const arrows = document.querySelector(".arrows");
   setTimeout(function() {
     if (window.scrollY < (introHeight * 0.2)) {
-      arrows.forEach(function(arrow){
-        arrow.style.display = 'block';
-      });
+      arrows.style.display = 'block';
     } else {
       console.log('Scroll down arrow hint skipped.');
     }
