@@ -12,7 +12,7 @@
     .time-place {
       display: flex;
       justify-content: space-between;
-      @include mobile {
+      @include desktop {
         display: block;
       }
     }

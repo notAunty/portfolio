@@ -45,6 +45,15 @@
 }
 
 
+$h1: 5.0;
+$h2: 4.3;
+$h3: 3.6;
+$h4: 3.0;
+$h5: 2.5;
+$h6: 2.2;
+$body: 1.9;
+$caption: 1.6;
+
 $font-stack: Helvetica, Roboto, system, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 $sans: 'Urbanist', $font-stack;
 $monospace: 'Ubuntu Mono', monospace;
@@ -65,13 +74,4 @@ $monospace: 'Ubuntu Mono', monospace;
     font-size: calc(#{$val * 0.5}rem);
   }
 }
-
-$h1: 5.0;
-$h2: 4.3;
-$h3: 3.6;
-$h4: 3.0;
-$h5: 2.5;
-$h6: 2.2;
-$body: 1.9;
-$caption: 1.6;
 
