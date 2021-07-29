@@ -26,7 +26,7 @@
     &__pic {
       width: 100%;
       // max-width: 600px;
-      overflow: hidden;
+      overflow: visible;
       margin: 0;
       a {
         display: block;
@@ -46,7 +46,7 @@
       img {
         width: 100%;
         max-width: 100%;
-        border-radius: 10px;
+        border-radius: 12px;
         vertical-align: bottom;
       }
     }
