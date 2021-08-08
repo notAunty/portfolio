@@ -1,21 +1,20 @@
 <footer class="site-footer">
   <div class="site-footer__copyright">
-    {% comment %}
     <div class="top">
+      <span>Made with ❤️️ by</span>
+      <span>{{site.name}}</span>
+    </div>
+    <div class="bottom">
       <!--<img class="emoji" src="{{site.baseurl}}img/emojis/rockon.png" alt="emoji">-->
       <!--<span>2021</span>-->
     </div>
-    {% endcomment %}
-    <div class="bottom">
-      <span> &copy; 2021 {{site.name}}. All rights reserved.</span>
+    <div class="adopted">
+      <span>Adopted from</span>
+      <a class="underline-link" href="https://github.com/bchiang7">Brittany Chiang</a>
     </div>
   </div>
 
   <div class="site-footer__links">
-    <a href="{{site.url}}" target="_blank" title="homepage">
-      <span class="text">homepage</span>
-      <img src="{{site.baseurl}}img/social/homepage.svg" alt="Homepage">
-    </a>
     {% for link in site.social %}
     <a href="{{link.url}}" target="_blank" title="{{link.title}}">
       <span class="text">{{link.title}}</span>

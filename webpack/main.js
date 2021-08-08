@@ -1,6 +1,9 @@
 $("document").ready(main);
 
 function main() {
+  const domain = "https://wksoh.com/"
+  const currentUrl = window.location.href;
+  
   // NIGHT MODE
   const body = document.querySelector("body");
   const toggle = document.getElementById("toggle");
@@ -25,39 +28,17 @@ function main() {
     }
   });
 
-  // SCROLL DOWN HINT ARROW
-  const arrows = document.querySelector(".arrows");
-  setTimeout(function () {
-    if (window.scrollY < introHeight * 0.2) {
-      arrows.style.display = "block";
-    } else {
-      console.log("Scroll down arrow hint skipped.");
-    }
-  }, 3000);
-
-  // REPLACE fake email with real email after 10ms
-  const fakeEmailAddr = "annoying.spammer83295@gmail.com";
-  setTimeout(function() {
-    $("a").html(function (_, html) {
-      return html.replace(fakeEmailAddr, "ksoh@tuta.io");
-    });
-    document
-      .querySelectorAll(`a[href="mailto:${fakeEmailAddr}"]`)
-      .forEach(function (a) {
-        a.setAttribute("href", "mailto:ksoh@tuta.io");
-      });
-  }, 10)
-
   // GO TO TOP BUTTON
-  const introHeight = document.querySelector(".intro").offsetHeight;
   const goTopButton = document.getElementById("go-top-btn");
   // const $goTopButton = $("#go-top-btn");
+  // const introHeight = document.querySelector(".intro").offsetHeight;
 
   // Show Go-Top-Button when scroll beyond first-page
   window.addEventListener(
     "scroll",
     function () {
-      if (window.scrollY > introHeight * 0.8) {
+      if (window.scrollY > 300) {
+        // if (window.scrollY > introHeight * 0.8) {
         // goTopButton.style.display = 'block'; // $goTopButton.fadeIn();
         goTopButton.style.transform = "translateY(0px)";
       } else {
@@ -80,6 +61,35 @@ function main() {
       this.style.display = "none";
     };
   });
+
+
+  if (!(
+    currentUrl === domain || 
+    currentUrl === "http://localhost:4000/"
+  )) return;
+
+  // SCROLL DOWN HINT ARROW
+  const arrows = document.querySelector(".arrows");
+  setTimeout(function () {
+    if (window.scrollY < 300) {
+      arrows.style.display = "block";
+    } else {
+      console.log("Scroll down arrow hint skipped.");
+    }
+  }, 3000);
+
+  // REPLACE fake email with real email after 10ms
+  const fakeEmailAddr = "annoying.spammer83295@gmail.com";
+  setTimeout(function() {
+    $("a").html(function (_, html) {
+      return html.replace(fakeEmailAddr, "ksoh@tuta.io");
+    });
+    document
+      .querySelectorAll(`a[href="mailto:${fakeEmailAddr}"]`)
+      .forEach(function (a) {
+        a.setAttribute("href", "mailto:ksoh@tuta.io");
+      });
+  }, 10)
 
   // HAND WAVE ANIMATION
   const hand = document.querySelector(".emoji.wave-hand");

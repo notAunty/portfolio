@@ -1,0 +1,147 @@
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: inherit;
+
+  &-content {
+    flex-grow: 1;
+    padding-top: 80px;
+  }
+
+  &-main {
+    display: block;
+    margin-bottom: 96px;
+
+    font-weight: 500;
+    @include font-size($body);
+
+    h2, h3, h4, h5, h6 {
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    h1 {
+      @include font-size($h1);
+    }
+
+    h2 {
+      @include font-size($h2);
+    }
+
+    h3 {
+      @include font-size($h3);
+    }
+
+    h4 {
+      @include font-size($h4);
+    }
+
+    h5 {
+      @include font-size($h5);
+    }
+
+    h6 {
+      @include font-size($h6);
+    }
+
+    .centered-title {
+      text-align: center;
+      margin: 12px 0 0 0;
+
+      h1 {
+        @include font-size($h4);
+      }
+    }
+  }
+}
+
+.blog {
+  padding: 0 9vw;
+
+  @include tablet {
+    padding: 0 7vw;
+  }
+
+  @include mobile {
+    padding: 0 32px;
+  }
+
+  &__inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1040px;
+
+    #title-bar {
+      margin: 0.83em 0 2rem 0;
+      @include font-size($body);
+
+      h1 {
+        @include font-size($h1);
+        margin-bottom: 0;
+      }
+
+      * {
+        margin: 0;
+      }
+    }
+  }
+
+  &__content {
+    vertical-align: baseline;
+
+    p, div, blockquote, dl, img {
+      margin-top: 2em;
+    }
+
+    ol, ul {
+      li {
+        margin-top: 1em;
+      }
+    }
+
+    // blockquote, dl, ol, p, ul {
+    //     margin: 0 0 1.5rem;
+    // }
+
+    // Images
+    img {
+      margin: 0 auto;
+      display: block;
+      height: auto;
+      max-width: 100%;
+      max-height: 70vh;
+      // max-width: 800px;
+
+      // @include tablet {
+      //   max-width: -webkit-fill-available;
+      // }
+    }
+
+    img + em {
+      display: block;
+      text-align: center;
+    }
+
+    // Code Block
+    [class^="language-"] {
+      font-family: $monospace;
+      background-color: rgba(128, 128, 128, 0.11);
+    }
+
+    pre.highlight {
+      padding: 8px;
+    }
+
+    // Bullet List
+    ul {
+      list-style-type: disc;
+      padding-inline-start: 40px;
+    }
+
+    ol {
+      list-style-type: decimal;
+      padding-inline-start: 40px;
+    }
+  }
+}

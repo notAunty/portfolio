@@ -1,0 +1,82 @@
+.kg-canvas {
+  margin: -24px 0 0 0; 
+  padding: 0 32px;
+  
+  figure {
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: hidden;
+  }
+
+  .kg-bookmark-card {
+    min-height: 128px;
+    max-height: 384px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 4px;
+    margin-top: 45px;
+
+    :first-of-type {
+      margin-top: 0;
+    }
+
+    .kg-bookmark-container {
+      display: flex;
+      position: relative;
+      text-decoration: none !important;
+
+      @include tablet {
+        display: block;
+      }
+
+      .kg-bookmark-content {
+        // flex: max min basis(ideal);
+        // flex: 3 1 auto; === flex-grow: 3;
+        // flex: 0 1 auto; === flex-shrink: 1;
+        flex-grow: 1;
+        overflow: hidden;
+        padding: 25px;
+
+        .kg-bookmark-title {
+          @include font-size($body);
+        }
+
+        .kg-bookmark-description {
+          @include font-size($caption);
+          opacity: 0.8;
+          margin-top: 5px;
+          font-weight: 400;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+
+        .kg-bookmark-metadata {
+          @include font-size($caption);
+          margin-top: 5px;
+          font-weight: 400;
+        }
+      }
+
+      .kg-bookmark-thumbnail {
+        flex-shrink: 0;
+        margin-left: 20px;
+        position: relative;
+        width: 300px;
+
+        img {
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+          -o-object-fit: cover;
+          width: 100%;
+        }
+
+        @include tablet {
+          height: 200px;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

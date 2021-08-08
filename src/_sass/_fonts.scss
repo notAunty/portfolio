@@ -45,14 +45,14 @@
 }
 
 
-$h1: 5.0;
-$h2: 4.3;
-$h3: 3.6;
+$h1: 4.3;
+$h2: 3.9;
+$h3: 3.5;
 $h4: 3.0;
 $h5: 2.5;
-$h6: 2.2;
-$body: 1.9;
-$caption: 1.6;
+$h6: 2.25;
+$body: 2.05;
+$caption: 1.7;
 
 $font-stack: system-ui, Verdana, Helvetica, Roboto, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 $sans: 'Urbanist', $font-stack;
@@ -67,7 +67,7 @@ $monospace: 'Ubuntu Mono', monospace;
   font-size: #{$val}vmax;
 
   @media screen and (max-width: #{$tablet-width}) {
-    font-size: calc(#{(($val - 1.6) * 1.8 / 3.4) + 2.2}vmax);
+    font-size: calc(#{(($val - 1.7) * 2.1 / 2.6) + 2.2}vmax);
   }
 
   @media screen and (min-width: #{$desktop-width}) {

@@ -1,0 +1,40 @@
+---
+layout: default
+title: "K Soh's Blog"
+permalink: "/blog/"
+---
+
+<div class="site">
+  {% include header-switch.html %}
+  {% include top-button.html %}
+  <div class="site-content">
+    <div class="content-area">
+      <main class="site-main">
+        <div class="centered-title">
+          <h1>Blog</h1>
+        </div>
+        <div class="post-content kg-canvas u-text-format">
+          {% for entry in site.blog %}
+            <figure class="kg-card kg-bookmark-card">
+              <a class="kg-bookmark-container" href="{{ entry.url | prepend: site.url }}">
+                <div class="kg-bookmark-content">
+                  <div class="kg-bookmark-title">{{ entry.title }}</div>
+                  <div class="kg-bookmark-description">
+                    {{ entry.description | truncate: 160 }}
+                  </div>
+                  <div class="kg-bookmark-metadata">
+                    <span class="kg-bookmark-author">{{ entry.author | default: site.name }}</span>
+                  </div>
+                </div>
+                <div class="kg-bookmark-thumbnail">
+                  <img src="{{ entry.image }}" />
+                </div>
+              </a>
+            </figure>
+          {% endfor %}
+        </div>
+      </main>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>

@@ -16,14 +16,16 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $white;
-  color: $dark-grey;
-  font-family: $sans;
-  font-display: swap;
-  line-height: 1.5;
   width: 100%;
+  color: $dark-grey;
+  background-color: $white;
+
+  line-height: 1.5;
+  font-family: $sans;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
 
   &.night {
     background-color: $night;
@@ -49,13 +51,13 @@ body {
     .project__name,
     .skills .skillz__category__label,
     .experience .job__time,
-    .footer__copyright {
+    .site-footer__copyright {
       color: $off-white;
     }
     .underline-link:after {
       background: $off-white;
     }
-    .footer {
+    .site-footer {
       background-color: $darker-night;
     }
   }

@@ -8,6 +8,16 @@
     <span class="emoji technologist"></span>
   </h2>
 
+  {% if site.blog_enabled %}
+  <h3 class="intro__contact">
+    <span>Go to</span>
+    <span class="emoji pointer"></span>
+    <span>
+      <a href="{{ site.url }}{{ site.baseurl }}blog" target="_blank" class="highlight-link">My Blog</a>
+    </span>
+  </h3>
+  {% endif %}
+
   <h3 class="intro__contact">
     <span>Get in touch </span>
     <span class="emoji pointer"></span>

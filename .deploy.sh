@@ -6,7 +6,7 @@ cd ..
 source ~/.profile
 webpack
 JEKYLL_ENV=production
-jekyll build
+bundle exec jekyll build
 cp -r _site/. public
 cd public
 git add .
